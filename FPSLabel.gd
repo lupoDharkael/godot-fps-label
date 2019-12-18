@@ -9,13 +9,14 @@ extends CanvasLayer
 enum Position {TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, NONE}
 
 export (Position) var position = Position.TOP_LEFT
-export(int) var margin = 5
+export(int) var margin : int = 5
 
-
-onready var label = $Label
+var label : Label
 
 
 func _ready() -> void:
+	label = Label.new()
+	add_child(label)
 	get_tree().get_root().connect("size_changed", self, "update_position")
 	update_position()
 
