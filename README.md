@@ -1,4 +1,4 @@
-# godot-fps-label
+# Godot Fps Label
 Godot asset to show the frame rate of your games.
 
 This document uses the format of the official Godot docs.
@@ -44,3 +44,8 @@ Direct reference to the active Label node.
 Position position
 ```
 Holds the value of the enum Position defined by the user.
+
+# Asset usage
+
+- Add a copy of `FPSLabel.gd` to your game.
+- Add a `FPSLabel` node to your scene.
